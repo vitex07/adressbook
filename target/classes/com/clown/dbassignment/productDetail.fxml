@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clown.dbassignment.ContactDetailController">
+   <children>
+      <AnchorPane layoutX="246.0" layoutY="43.0" prefHeight="294.0" prefWidth="346.0">
+         <children>
+            <Label fx:id="titleLabel" layoutX="31.0" layoutY="14.0" prefHeight="26.0" prefWidth="201.0" text="姑获鸟之夏">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="3.0" layoutY="72.0" prefHeight="76.0" prefWidth="222.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="16.0" text="手机号">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="telLabel" layoutX="74.0" layoutY="16.0" prefHeight="22.0" prefWidth="140.0" text="114514">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="telTextField" layoutX="73.0" layoutY="50.0" prefHeight="23.0" prefWidth="140.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="151.0" prefHeight="85.0" prefWidth="244.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="3.0" text="组别">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="49.0" text="加入时间">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="classLabel" layoutX="93.0" layoutY="3.0" prefHeight="15.0" prefWidth="57.0" text="niuniu">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="shelfTimeLabel" layoutX="97.0" layoutY="49.0" prefHeight="22.0" prefWidth="146.0" text="2020.17.5">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label fx:id="groupLabel" layoutX="179.0" layoutY="3.0" text="Label">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="14.0" layoutY="237.0" onAction="#onDeleteButtonClick" text="删除该联系人" />
+            <JFXButton layoutX="125.0" layoutY="237.0" onAction="#onUpdateButtonClick" text="更新该联系人" />
+            <TextField fx:id="titleTextField" layoutX="37.0" layoutY="48.0" />
+            <AnchorPane fx:id="selectPane" layoutX="244.0" layoutY="28.0" prefHeight="246.0" prefWidth="78.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="24.0" prefHeight="334.0" prefWidth="244.0">
+         <children>
+            <ImageView fx:id="productImg" fitHeight="201.0" fitWidth="146.0" layoutX="59.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../anime/7SAHLVH6ACQ%25C_8%7BW_S%7B%60OV.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="sexLabel" layoutX="26.0" layoutY="77.0" text="男">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="introductionArea" layoutX="21.0" layoutY="283.0" prefHeight="34.0" prefWidth="202.0" />
+            <JFXToggleButton fx:id="toggleButton" layoutX="73.0" text="改为女性" />
+         </children>
+      </AnchorPane>
+      <JFXTextArea fx:id="textArea" layoutX="62.0" layoutY="353.0" prefHeight="22.0" prefWidth="475.0" />
+   </children>
+</AnchorPane>

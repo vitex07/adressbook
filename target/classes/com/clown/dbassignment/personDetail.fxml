@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="577.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clown.dbassignment.PersonDetailController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="105.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="22.0" layoutY="5.0" prefHeight="15.0" prefWidth="49.0" text="Avatar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="avatarView" fitHeight="82.0" fitWidth="90.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="106.0" prefHeight="82.0" prefWidth="604.0">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" text="昵称">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="52.0" text="性别">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nickNameLabel" layoutX="79.0" layoutY="14.0" prefHeight="19.0" prefWidth="70.0" text="niuniu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="sexLabel" layoutX="79.0" layoutY="52.0" prefHeight="19.0" prefWidth="70.0" text="bot">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="413.0" layoutY="26.0" prefHeight="30.0" prefWidth="114.0" text="修改基本信息">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="188.0" prefHeight="82.0" prefWidth="604.0">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" text="账号">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="52.0" text="密码">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="accountLabel" layoutX="83.0" layoutY="14.0" prefHeight="19.0" prefWidth="106.0" text="rin">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="83.0" layoutY="52.0" prefHeight="19.0" prefWidth="90.0" text="*********">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="411.0" layoutY="26.0" prefHeight="30.0" prefWidth="114.0" text="修改密码">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="270.0" prefHeight="43.0" prefWidth="604.0">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" text="邮箱">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" layoutX="93.0" layoutY="14.0" prefHeight="19.0" prefWidth="279.0" text="asnanin@qq.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="313.0" prefHeight="43.0" prefWidth="604.0">
+         <children>
+            <Label layoutX="27.0" layoutY="14.0" text="信用卡">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="creditCardLabel" layoutX="92.0" layoutY="12.0" prefHeight="19.0" prefWidth="279.0" text="asnanin@qq.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="416.0" layoutY="6.0" prefHeight="30.0" prefWidth="114.0" text="改绑信用卡">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-6.0" layoutY="356.0" prefHeight="94.0" prefWidth="604.0">
+         <children>
+            <Label fx:id="AddressLabel" layoutX="26.0" layoutY="4.0" text="收货地址">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="addButton" layoutX="93.0" layoutY="3.0" text="Add" />
+            <TableView fx:id="table" layoutX="25.0" layoutY="23.0" prefHeight="163.0" prefWidth="586.0" />
+            <JFXButton fx:id="checkCommodityButton" layoutX="250.0" layoutY="2.0" onAction="#onCheckCommodityButton" text="查看我的商品" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clown.dbassignment.Main">
+   <children>
+      <JFXButton layoutX="1.0" layoutY="14.0" onAction="#onSearchButtonClick" prefHeight="32.0" prefWidth="72.0" text="Cart" />
+      <JFXButton layoutX="1.0" layoutY="46.0" onAction="#onTableButtonClick" prefHeight="32.0" prefWidth="72.0" text="Table" />
+      <JFXButton layoutY="78.0" onAction="#onLoginButtonClick" prefHeight="8.0" prefWidth="72.0" text="Login">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clown.dbassignment.AddContactController">
+   <children>
+      <Label layoutX="274.0" layoutY="107.0" text="姓名">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="135.0" text="介绍">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="163.0" text="Tel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="218.0" text="性别">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="271.0" text="组别">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productNameField" layoutX="360.0" layoutY="107.0" />
+      <TextField fx:id="introductionField" layoutX="360.0" layoutY="135.0" />
+      <TextField fx:id="telField" layoutX="360.0" layoutY="163.0" />
+      <JFXButton layoutX="259.0" layoutY="342.0" onAction="#onSubmitButtonClick" text="submit" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../anime/148931479-23aef436-2fc1-4c1e-84c9-bae17be710a5.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="122.0" layoutY="283.0" onAction="#onUploadButtonClick" ripplerFill="#bfb223" text="上传图片" />
+      <JFXToggleButton fx:id="sexToggleButton" layoutX="363.0" layoutY="200.0" prefHeight="58.0" prefWidth="209.0" text="女性" />
+      <AnchorPane fx:id="subPane" layoutX="525.0" layoutY="271.0" prefHeight="122.0" prefWidth="64.0" />
+      <Label fx:id="groupLabel" layoutX="398.0" layoutY="271.0" prefHeight="24.0" prefWidth="92.0" text="Label" />
+   </children>
+</AnchorPane>
